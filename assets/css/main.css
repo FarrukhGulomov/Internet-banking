@@ -124,20 +124,21 @@ body{
 main .section-menu ul{
     display: flex;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 main .section-menu ul li{
-    padding: 10px 10px;
+    
     margin-right: 2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
 main .section-menu ul li:first-child {
 background-color: #076100;
-
+padding: 10px;
 }
 main .section-menu ul li:not(:first-child){
     background-color:#3D6554;
+    padding: 10px 25px;
 }
 
 main .section-menu ul li a{
@@ -145,10 +146,30 @@ main .section-menu ul li a{
     text-transform: uppercase;
     color: #fff;
     display: block;
-    text-decoration: none;  
+    text-decoration: none;
+    
 }
 main .section-menu ul li img{
     width: 24px;
     vertical-align: middle;
+    margin-right: 2px;
 }
-
+ .wrapper{
+    width: 74%;
+    margin: 0 auto;
+}
+main .section-cards{
+    width: 100%;
+    margin-top: 24px;
+}
+.section-cards table th{
+    background-color: #006d43;
+    color: #fff;
+    font-size: 13px;
+    font-family: arial;
+    font-weight: normal;
+    padding: 2.5px 8px;
+}
+.section-cards table td{
+    text-align: center;
+}
