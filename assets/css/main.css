@@ -37,7 +37,7 @@ body{
     text-transform: uppercase;
     line-height: 14px;
 }
-.header ul li {
+.header ul li,main ul li {
     list-style: none;
 }
 .header .user-item{
@@ -121,7 +121,34 @@ body{
     border-bottom-right-radius: 6px;
     color: #fff;
 }
+main .section-menu ul{
+    display: flex;
+    position: relative;
+    z-index: -1;
+}
+main .section-menu ul li{
+    padding: 10px 10px;
+    margin-right: 2px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+main .section-menu ul li:first-child {
+background-color: #076100;
 
-/*background  #777777;
-border- #EAEAEA 
-#B2BAC1*/
+}
+main .section-menu ul li:not(:first-child){
+    background-color:#3D6554;
+}
+
+main .section-menu ul li a{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    text-decoration: none;  
+}
+main .section-menu ul li img{
+    width: 24px;
+    vertical-align: middle;
+}
+
