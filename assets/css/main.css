@@ -155,12 +155,27 @@ main .section-menu ul li img{
     margin-right: 2px;
 }
  .wrapper{
-    width: 74%;
+    width: 64%;
     margin: 0 auto;
+    
 }
 main .section-cards{
     width: 100%;
     margin-top: 24px;
+    height: 150px;
+    overflow: scroll;
+    overflow-x:hidden;
+    margin-bottom: 10px;
+    
+}
+
+thead tr{
+    position: sticky;
+    top:0%;
+    
+    
+  
+  
 }
 .section-cards table th{
     background-color: #006d43;
@@ -168,8 +183,68 @@ main .section-cards{
     font-size: 13px;
     font-family: arial;
     font-weight: normal;
-    padding: 2.5px 8px;
+    padding:3px 8px;
+    
+    
 }
 .section-cards table td{
     text-align: center;
+    font-size: 14px;
+    font-family: Tahoma,Verdana,sans-serif;
+    border: 1px solid #ffffff;
+    font-weight: 500;  
+    
+}
+
+td{
+    padding: 4px 2px;
+}
+tbody tr:nth-child(odd){
+    background-color: #ffffff;
+}
+tbody tr:nth-child(even){
+    background-color: #E5E8E3;
+}
+ select{
+    font-size: 14px;
+    font-family:  Verdana, sans-serif;
+    height: 32px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #92b8a9;
+    color: #006d43;
+    
+    outline: none;
+   
+}
+select option ,select{
+    font-weight: 600;
+    
+}
+tbody input {
+    border-radius: 5px;
+    border:1px solid #92b8a9;
+    padding: 2px 6px;
+}
+tbody:hover{
+    background-color: #006d43;
+}
+.current-card .card-number{
+    font-size: 12px;
+    color:#4E4E4E;
+    padding-left: 45px;
+}
+.current-card{
+    padding: 10px;
+    background-color: #fdfdfd;
+    border: 1px solid #cecece;
+}
+
+
+.input-group{
+    background-color: #e6e6e6;
+    border-top: 1px solid #aaa; 
+    font-size: 16px;
+    padding: 175px 0;
+
 }
