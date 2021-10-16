@@ -168,14 +168,12 @@ main .section-cards{
     margin-bottom: 10px;
     
 }
-
+tr:hover{
+    cursor: pointer;
+}
 thead tr{
     position: sticky;
-    top:0%;
-    
-    
-  
-  
+    top:0%; 
 }
 .section-cards table th{
     background-color: #006d43;
@@ -241,10 +239,76 @@ tbody:hover{
 }
 
 
-.input-group{
+.form-group{
     background-color: #e6e6e6;
     border-top: 1px solid #aaa; 
     font-size: 16px;
-    padding: 175px 0;
+    padding: 55px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
+}
+.card-group{
+    background-color: #eeeeee;
+    
+    border-radius: 10px;
+   
+}
+/* .input-group> *:not(:first-child){
+    display: block;
+} */
+.logo-card{
+    text-align: center;
+    padding-top: 15px;
+  
+}
+.logo-card img{
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.23);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.23);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.23);
+    opacity: .8;
+    margin: 0 2px;
+
+}
+.input-groups {
+ 
+    padding: 5px 55px 0px;
+}
+
+.input-group p{
+    font-size: 12px;
+    padding-top: 10px;  
+    font-style: normal;
+    color:#4D4D4D;
+    line-height: 14px;
+}
+.input-group input{
+   font-size: 16px;
+   border: 3px solid transparent;
+   border-radius: 5px;
+   padding: 4px;
+   font-family: Verdana, sans-serif;
+   font-weight: 600;
+   color: #4d4d4d;
+   
+}
+.input-group input:focus{
+    border: 3px solid #5DB139;
+    transition: all .3s;
+    outline: none;
+}
+.add-btn{
+    text-align: center;
+    padding-top: 25px;
+}
+.add-btn button{
+    background-color: #5DB139;
+    color:#FFFFFF;
+    padding: 6px 75px;
+    border-color: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
