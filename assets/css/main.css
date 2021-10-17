@@ -163,7 +163,7 @@ main .section-cards{
     width: 100%;
     margin-top: 24px;
     height: 150px;
-    overflow: scroll;
+    overflow: auto;
     overflow-x:hidden;
     margin-bottom: 10px;
     
@@ -275,7 +275,7 @@ tbody:hover{
 }
 .input-groups {
  
-    padding: 5px 55px 0px;
+    padding: 0px 55px;
 }
 
 .input-group p{
@@ -294,6 +294,9 @@ tbody:hover{
    font-weight: 600;
    color: #4d4d4d;
    
+}
+.input-group input:hover{
+    text-decoration: none;
 }
 .input-group input:focus{
     border: 3px solid #5DB139;
